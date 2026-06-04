@@ -1,0 +1,15 @@
+[submodule "external/fmt"]
+	path = external/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "external/libusb"]
+	path = external/libusb
+	url = https://github.com/libusb/libusb-cmake.git
+[submodule "external/simd"]
+	path = external/simd
+	url = https://github.com/ermig1979/Simd.git
+[submodule "external/wil"]
+	path = external/wil
+	url = https://github.com/microsoft/wil.git
+[submodule "external/libdshowcapture"]
+	path = external/libdshowcapture
+	url = https://github.com/obsproject/libdshowcapture.git

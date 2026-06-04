@@ -1,8 +1,6 @@
 # build output folders
 /build*
 
-# checkouts in /external
-/external/*/
 
 # IDEs
 /.idea
