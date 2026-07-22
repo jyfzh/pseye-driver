@@ -58,6 +58,13 @@ pixel_format convert_video_format(DShow::VideoFormat format)
 
 bool need_to_flip_v(pixel_format native_fmt, pixel_format out_fmt, bool native_flip_v)
 {
+  // If the hardware is already set up to flip vertically,
+  // the raw data is already correctly oriented — no software flip needed.
+  if (native_flip_v)
+    return false;
+
+  // Hardware flip is off: the sensor's natural upside-down mounting
+  // orientation is still present in the raw data.
   switch (out_fmt) {
     case pixel_format::bgr24:
     case pixel_format::rgb24:
